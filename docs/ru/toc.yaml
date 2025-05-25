@@ -7,7 +7,7 @@ items:
     include:
       path: english/toc.yaml
       mode: link
-  - name: Programming
+  - name: Algorithms
     include:
-      path: programming/toc.yaml
+      path: algorithms/toc.yaml
       mode: link
