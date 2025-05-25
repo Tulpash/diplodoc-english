@@ -1,4 +1,8 @@
 title: Leetcode
 items: 
-  - name: 1832. Check if the Sentence Is Pangram
-    href: 1832.md
+  - name: About
+    href: About.md
+  - name: Hash table
+    include:
+      path: hash_table/toc.yaml
+      mode: link

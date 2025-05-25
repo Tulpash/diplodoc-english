@@ -1,0 +1,14 @@
+title: HashTable
+items: 
+  - name: Easy
+    include:
+      path: easy/toc.yaml
+      mode: link
+  - name: Medium
+    include:
+      path: medium/toc.yaml
+      mode: link
+  - name: Hard
+    include:
+      path: hard/toc.yaml
+      mode: link
