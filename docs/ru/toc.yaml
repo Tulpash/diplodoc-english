@@ -2,7 +2,7 @@ title: Моя вики
 href: index.yaml
 items: 
   - name: Main
-    herf: Main.md
+    href: Main.md
   - name: English
     include:
       path: english/toc.yaml
