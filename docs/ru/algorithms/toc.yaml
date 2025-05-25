@@ -1,0 +1,14 @@
+title: Algorithms
+items: 
+  - name: Solving patterns
+    include:
+      path: solving_patterns/toc.yaml
+      mode: link
+  - name: Algorithms
+    include:
+      path:
+      mode: link
+  - name: Leetcode
+    include:
+      path: leetcode/toc.yaml
+      mode: link

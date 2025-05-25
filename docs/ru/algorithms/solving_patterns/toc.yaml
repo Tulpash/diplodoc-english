@@ -1,0 +1,8 @@
+title: Solving patterns
+items: 
+  - name: Sliding window
+    href: SlidingWindow.md
+  - name: Two pointers
+    href: TwoPointers.md
+  - name: Fast and Slow pointers
+    href: FastSlowPointers.md
