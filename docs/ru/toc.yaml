@@ -1,13 +1,11 @@
-title: Шаблон проекта документации
+title: Моя вики
 href: index.yaml
 items: 
-  - name: О проекте
-    href: about.md
-  - name: Дополнительная страница
-    href: page.md
-  - name: Другая страница
-    href: anotherpage.md
-  - name: Подраздел
+  - name: English
     include:
-      path: sub-section/toc.yaml
+      path: english/toc.yaml
+      mode: link
+  - name: Programming
+    include:
+      path: programming/toc.yaml
       mode: link
