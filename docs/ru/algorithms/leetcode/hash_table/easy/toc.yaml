@@ -2,3 +2,5 @@ title: HashTable_Easy
 items: 
   - name: 1832. Check if the Sentence Is Pangram
     href: 1832.md
+  - name: 2423. Remove Letter To Equalize Frequency
+    href: 2423.md
