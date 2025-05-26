@@ -1,7 +1,7 @@
 # Sliding window
 
 Представляет собой некоторое окно которое мы двигаем по исходному массиву.
-![Sliding window](images/sliding_window.avif "Sliding window")
+![Sliding window](_images/sliding_window.avif "Sliding window")
 
 ## Как можно понять, что возможно использовать
 - Входные данные  представляют линейную структуру: массив, список, строка
