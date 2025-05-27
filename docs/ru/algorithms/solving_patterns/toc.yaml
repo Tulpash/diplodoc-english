@@ -6,3 +6,5 @@ items:
     href: TwoPointers.md
   - name: Fast and Slow pointers
     href: FastSlowPointers.md
+  - name: Merge Intervals
+    href: MergeIntervals.md
