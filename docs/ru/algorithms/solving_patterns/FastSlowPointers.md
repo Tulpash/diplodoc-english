@@ -1,7 +1,7 @@
 # Fast and Slow pointers
 
 Запускаем два указатель с разным шагом, чаще всего медленный с шагом 1 и быстрый с шагом 2.
-![FastSlowPointers](_images/fast_slow_pointers.png "Fast and Slow pointers" =100x)
+![FastSlowPointers](_images/fast_slow_pointers.png "Fast and Slow pointers")
 
 ## Как можно понять, что возможно использовать
 - Надо найти цикл в списке
