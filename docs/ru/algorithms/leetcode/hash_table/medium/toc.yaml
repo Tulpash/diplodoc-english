@@ -2,3 +2,7 @@ title: HashTable_Medium
 items: 
   - name: 1261. Find Elements in a Contaminated Binary Tree
     href: 1261.md
+  - name: 139. Word Break
+    href: 139.md
+  - name: 73. Set Matrix Zeroes
+    href: 73.md
