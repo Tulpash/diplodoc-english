@@ -1,2 +1,6 @@
 title: Common
 items: 
+  - name: Стек и куча
+    href: StackAndHeap.md 
+  - name: Ссылочные и значимые типы
+    href: RefAndValTypes.md
