@@ -1,8 +1,16 @@
 title: HashTable_Easy
 items: 
+  - name: 160. Intersection of Two Linked Lists
+    href: 160.md
+  - name: 217. Contains Duplicate
+    href: 217.md
+  - name: 242. Valid Anagram
+    href: 242.md
+  - name: 349. Intersection of Two Arrays
+    href: 349.md
+  - name: 350. Intersection of Two Arrays II
+    href: 350.md
   - name: 1832. Check if the Sentence Is Pangram
     href: 1832.md
   - name: 2423. Remove Letter To Equalize Frequency
     href: 2423.md
-  - name: 160. Intersection of Two Linked Lists
-    href: 160.md

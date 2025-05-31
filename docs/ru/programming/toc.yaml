@@ -1,0 +1,14 @@
+title: Programming
+items: 
+  - name: Common
+    include:
+      path: common/toc.yaml
+      mode: link
+  - name: C#
+    include:
+      path: csharp/toc.yaml
+      mode: link
+  - name: Go
+    include:
+      path: go/toc.yaml
+      mode: link
