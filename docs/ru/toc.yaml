@@ -11,3 +11,7 @@ items:
     include:
       path: algorithms/toc.yaml
       mode: link
+  - name: Programming
+    include:
+      path: programming/toc.yaml
+      mode: link
