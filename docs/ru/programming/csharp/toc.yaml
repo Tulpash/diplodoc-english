@@ -8,3 +8,7 @@ items:
     href: Boxing.md
   - name: Передача аргумента по ссылке
     href: RefArgument.md
+  - name: Конфиг GC
+    href: GCConfig.md
+  - name: Финализаторы
+    href: Finalizers.md

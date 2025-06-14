@@ -4,3 +4,5 @@ items:
     href: StackAndHeap.md 
   - name: Ссылочные и значимые типы
     href: RefAndValTypes.md
+  - name: API как сервер
+    href: WebApiAsServer.md
