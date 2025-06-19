@@ -1,4 +1,5 @@
 # Объекты в PostgreSQL
+Здесь описаны основные объекты PostgreSQL.
 [Официальная документация](https://www.postgresql.org/docs/17/index.html)
 
 ## 1. База данных (Database)
