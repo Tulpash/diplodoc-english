@@ -4,6 +4,10 @@ items:
     include:
       path: common/toc.yaml
       mode: link
+  - name: PostgreSQL
+    include:
+      path: postgresql/toc.yaml
+      mode: link
   - name: C#
     include:
       path: csharp/toc.yaml
