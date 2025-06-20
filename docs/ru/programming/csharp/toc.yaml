@@ -1,14 +1,10 @@
 title: C#
 items: 
-  - name: Куча
-    href: Heap.md 
-  - name: ref struct
-    href: RefStruct.md
-  - name: Боксинг
-    href: Boxing.md
-  - name: Передача аргумента по ссылке
-    href: RefArgument.md
-  - name: Конфиг GC
-    href: GCConfig.md
-  - name: Финализаторы
-    href: Finalizers.md
+  - name: Язык
+    include: 
+      path: lang/toc.yaml
+      mode: link
+  - name: EF Core
+    include:
+      path: efcore/toc.yaml
+      mode: link

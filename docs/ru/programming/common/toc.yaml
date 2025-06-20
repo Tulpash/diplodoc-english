@@ -6,3 +6,5 @@ items:
     href: RefAndValTypes.md
   - name: API как сервер
     href: WebApiAsServer.md
+  - name: ACID
+    href: ACID.md
