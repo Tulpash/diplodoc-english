@@ -8,3 +8,7 @@ items:
     href: WebApiAsServer.md
   - name: ACID
     href: ACID.md
+  - name: Уровни изоляции и аномалии
+    href: IsolationLevels.md
+  - name: SOLID
+    href: SOLID.md
