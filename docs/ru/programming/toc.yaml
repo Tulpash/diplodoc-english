@@ -1,5 +1,7 @@
 title: Programming
 items: 
+  - name: План
+    href: Plan.md
   - name: Common
     include:
       path: common/toc.yaml
