@@ -12,3 +12,5 @@ items:
     href: IsolationLevels.md
   - name: SOLID
     href: SOLID.md
+  - name: RabbitMQ
+    href: RabbitMQ.md

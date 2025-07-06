@@ -1,0 +1,6 @@
+title: OTel
+items: 
+  - name: Схема взаимодействия
+    href: Schema.md 
+  - name: Типы метрик
+    href: Metrics.md

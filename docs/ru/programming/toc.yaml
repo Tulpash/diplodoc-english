@@ -10,6 +10,10 @@ items:
     include:
       path: postgresql/toc.yaml
       mode: link
+  - name: Open Telemetry
+    include:
+      path: open_telemetry/toc.yaml
+      mode: link
   - name: C#
     include:
       path: csharp/toc.yaml
