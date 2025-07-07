@@ -1,5 +1,7 @@
 title: PostgreSQL
 items: 
+  - name: Структура
+    href: Struct.md
   - name: Объекты БД
     href: Objects.md
   - name: ACID

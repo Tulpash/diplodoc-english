@@ -14,3 +14,5 @@ items:
     href: SOLID.md
   - name: RabbitMQ
     href: RabbitMQ.md
+  - name: Устройство БД
+    href: DBStruct.md
