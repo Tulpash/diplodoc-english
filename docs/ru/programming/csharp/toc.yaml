@@ -8,6 +8,10 @@ items:
     include:
       path: efcore/toc.yaml
       mode: link
+  - name: Тестирование
+    include:
+      path: testing/toc.yaml
+      mode: link
   - name: Другое
     include:
       path: other/toc.yaml

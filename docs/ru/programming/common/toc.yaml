@@ -16,3 +16,5 @@ items:
     href: RabbitMQ.md
   - name: Устройство БД
     href: DBStruct.md
+  - name: Тестирование
+    href: Testing.md
