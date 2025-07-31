@@ -24,14 +24,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          cache: "npm"
       - name: Build
         uses: diplodoc-platform/docs-build-action@v3
         with:
           revision: "${{ github.sha }}"
           src-root: "./docs"
-          cache: "npm"
   upload:
     needs: build
     runs-on: ubuntu-latest
@@ -46,7 +43,6 @@ jobs:
           storage-bucket: ${{ vars.DIPLODOC_STORAGE_BUCKET }}
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
-          cache: "npm"
   release:
     needs: upload
     runs-on: ubuntu-latest
@@ -59,4 +55,3 @@ jobs:
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
           project-link: ${{ vars.DIPLODOC_PROJECT_LINK }}
-          cache: "npm"
