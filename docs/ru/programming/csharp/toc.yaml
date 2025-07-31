@@ -12,7 +12,5 @@ items:
     include:
       path: testing/toc.yaml
       mode: link
-  - name: Другое
-    include:
-      path: other/toc.yaml
-      mode: link
+  - name: RabbitMQ
+    href: RabbitMQ.md

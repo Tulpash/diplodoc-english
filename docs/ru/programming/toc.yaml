@@ -6,6 +6,10 @@ items:
     include:
       path: common/toc.yaml
       mode: link
+  - name: Микросервисы
+    include:
+      path: micro_services/toc.yaml
+      mode: link
   - name: PostgreSQL
     include:
       path: postgresql/toc.yaml

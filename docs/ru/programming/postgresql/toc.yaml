@@ -6,3 +6,11 @@ items:
     href: Objects.md
   - name: ACID
     href: ACID.md
+  - name: CTE
+    href: CTE.md
+  - name: Locks
+    href: Locks.md
+  - name: Как выполняется запрос
+    href: Query.md
+  - name: План запроса
+    href: QueryPlan.md
