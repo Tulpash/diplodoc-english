@@ -24,11 +24,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          cache: "npm"
       - name: Build
         uses: diplodoc-platform/docs-build-action@v3
         with:
           revision: "${{ github.sha }}"
           src-root: "./docs"
+          cache: "npm"
   upload:
     needs: build
     runs-on: ubuntu-latest
