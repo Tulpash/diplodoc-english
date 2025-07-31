@@ -46,6 +46,7 @@ jobs:
           storage-bucket: ${{ vars.DIPLODOC_STORAGE_BUCKET }}
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
+          cache: "npm"
   release:
     needs: upload
     runs-on: ubuntu-latest
@@ -58,3 +59,4 @@ jobs:
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
           project-link: ${{ vars.DIPLODOC_PROJECT_LINK }}
+          cache: "npm"
