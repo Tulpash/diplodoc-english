@@ -11,6 +11,7 @@ Console.WriteLine(p1 == p2); // True (value-based equality)
 {% endcut %}
 
 {% cut "Init-only Properties" %}
+
 Свойства с модификатором init можно устанавливать только при создании объекта, обеспечивая неизменяемость после инициализации.
 ```cs
 public class Config
@@ -24,6 +25,7 @@ var config = new Config { Host = "example.com", Port = 8080 };
 {% endcut %}
 
 {% cut "Top-level Statements" %}
+
 Позволяет писать код без явного объявления `Main` метода, упрощая простые программы.
 ```cs
 Console.WriteLine("Hello, World!");
@@ -31,6 +33,7 @@ Console.WriteLine("Hello, World!");
 {% endcut %}
 
 {% cut "Pattern Matching Enhancements" %}
+
 Улучшения в pattern matching: type patterns, relational patterns (`>`, `<`), logical patterns (`and`, `or`, `not`).
 ```cs
 object value = 42;
@@ -42,6 +45,7 @@ if (value is int x and > 0)
 {% endcut %}
 
 {% cut "Covariant Returns" %}
+
 Позволяет возвращать более конкретный тип в переопределённых методах.
 ```cs
 abstract class Animal 
@@ -56,6 +60,7 @@ class Dog : Animal
 {% endcut %}
 
 {% cut "Improved Target Typing" %}
+
 Улучшения в выводе типов (например, `new()` без указания типа).
 ```cs
 List<string> list = new();
@@ -63,6 +68,7 @@ List<string> list = new();
 {% endcut %}
 
 {% cut "Fit and Finish" %}
+
 Мелкие улучшения, такие как `with`-expressions для `records`, `new` для создания экземпляров без типа.
 ```cs
 var p1 = new Person("John", "Doe");
@@ -72,6 +78,7 @@ var p2 = p1 with { LastName = "Smith" }; // Создаёт копию с изм�
 
 ## C# 10 (.NET 6, ноябрь 2021)
 {% cut "Record Structs" %}
+
 Records теперь доступны для структур, обеспечивая value-based equality для value types.
 ```cs
 public record struct Point(int X, int Y);
@@ -82,6 +89,7 @@ Console.WriteLine(p1 == p2); // True
 {% endcut %}
 
 {% cut "Global Using Directives" %}
+
 Позволяет объявлять using для всего проекта в одном файле.
 ```cs
 global using System;
@@ -90,6 +98,7 @@ global using System.Linq;
 {% endcut %}
 
 {% cut "File-scoped Namespaces" %}
+
 Упрощает объявление пространства имён без фигурных скобок.
 ```cs
 namespace MyApp;
@@ -98,6 +107,7 @@ class Program { /* код */ }
 {% endcut %}
 
 {% cut "Improved Interpolated Strings" %}
+
 Интерполированные строки могут быть `const`, если все части — константы.
 ```cs
 const string name = "World";
@@ -106,6 +116,7 @@ const string greeting = $"Hello, {name}!"; // Компилируется как 
 {% endcut %}
 
 {% cut "Extended Property Patterns" %}
+
 Улучшения в pattern matching для доступа к вложенным свойствам.
 ```cs
 var obj = new { Person = new { Name = "John" } };
@@ -115,6 +126,7 @@ if (obj is { Person.Name: "John" })
 {% endcut %}
 
 {% cut "Lambda Improvements" %}
+
 Лямбда-выражения могут указывать тип возвращаемого значения и атрибуты.
 ```cs
 var add = [Pure] (int x, int y) => x + y;
@@ -122,6 +134,7 @@ var add = [Pure] (int x, int y) => x + y;
 {% endcut %}
 
 {% cut "Sealed Record ToString" %}
+
 Records позволяют переопределять ToString как sealed
 ```cs
 public record Person(string Name) 
@@ -133,6 +146,7 @@ public record Person(string Name)
 
 ## C# 11 (.NET 7, ноябрь 2022)
 {% cut "Raw String Literals" %}
+
 Многострочные строки с тройными кавычками ("""), игнорирующие escape-последовательности.
 ```cs
 var json = """
@@ -145,6 +159,7 @@ var json = """
 {% endcut %}
 
 {% cut "Generic Attributes" %}
+
 Атрибуты могут использовать generic-типы.
 ```cs
 public class MyAttribute<T> : Attribute { }
@@ -154,6 +169,7 @@ class MyClass { }
 {% endcut %}
 
 {% cut "Required Members" %}
+
 Свойства или поля с модификатором required требуют инициализации при создании объекта.
 ```cs
 public class Person
@@ -165,6 +181,7 @@ var p = new Person { Name = "John" }; // Name обязателен
 {% endcut %}
 
 {% cut "Generic Math" %}
+
 Поддержка generic-интерфейсов (`INumber<T>`, `IAdditionOperators<T>`) для математических операций.
 ```cs
 T Sum<T>(T[] values) where T : INumber<T>
@@ -177,6 +194,7 @@ T Sum<T>(T[] values) where T : INumber<T>
 {% endcut %}
 
 {% cut "List Patterns" %}
+
 Pattern matching для списков и массивов.
 ```cs
 int[] numbers = { 1, 2, 3 };
@@ -186,6 +204,7 @@ if (numbers is [1, 2, 3])
 {% endcut %}
 
 {% cut "Auto-default Structs" %}
+
 Структуры автоматически инициализируют неуказанные поля значением по умолчанию.
 ```cs
 struct Point { public int X; public int Y; }
@@ -194,6 +213,7 @@ Point p = new() { X = 1 }; // Y = 0 автоматически
 {% endcut %}
 
 {% cut "Improved Method Group Conversion" %}
+
 Упрощённое преобразование делегатов.
 ```cs
 Action<int> action = Console.WriteLine; // Прямая конверсия
@@ -202,6 +222,7 @@ Action<int> action = Console.WriteLine; // Прямая конверсия
 
 ## C# 12 (.NET 8, ноябрь 2023)
 {% cut "Primary Constructors" %}
+
 Конструкторы в определении класса/структуры, упрощающие синтаксис.
 ```cs
 public class Person(string name, int age)
@@ -213,6 +234,7 @@ public class Person(string name, int age)
 {% endcut %}
 
 {% cut "Collection Expressions" %}
+
 Упрощённый синтаксис для создания коллекций.
 ```cs
 int[] array = [1, 2, 3];
@@ -221,6 +243,7 @@ List<int> list = [4, 5, 6];
 {% endcut %}
 
 {% cut "Inline Arrays" %}
+
 Фиксированные массивы в `struct` для оптимизации производительности.
 ```cs
 [System.Runtime.CompilerServices.InlineArray(10)]
@@ -234,6 +257,7 @@ buffer[0] = 1; // Как массив
 {% endcut %}
 
 {% cut "Alias Any Type" %}
+
 `using` для любых типов, включая кортежи и примитивы.
 ```cs
 using Point = (int X, int Y);
@@ -242,6 +266,7 @@ Point p = (1, 2);
 {% endcut %}
 
 {% cut "Default Lambda Parameters" %}
+
 Лямбда-выражения с параметрами по умолчанию.
 ```cs
 var greet = (string name = "World") => $"Hello, {name}!";
@@ -249,6 +274,7 @@ var greet = (string name = "World") => $"Hello, {name}!";
 {% endcut %}
 
 {% cut "Ref Readonly Parameters" %}
+
 `ref readonly` для передачи по ссылке без модификации.
 ```cs
 void Process(ref readonly int value) 
@@ -260,6 +286,7 @@ void Process(ref readonly int value)
 
 ## C# 13 (.NET 9, ноябрь 2024)
 {% cut "Implicit Index Access" %}
+
 Упрощённый доступ к индексам без явного создания `Index`.
 ```cs
 int[] array = [0, 1, 2, 3];
@@ -268,6 +295,7 @@ var last = array[^1]; // Не требует `Index` явным образом
 {% endcut %}
 
 {% cut "Extension params" %}
+
 `params` теперь поддерживает пользовательские типы коллекций.
 ```cs
 void Log<T>(params ReadOnlySpan<T> items)
@@ -279,6 +307,7 @@ Log(1, 2, 3); // Работает с Span<T>
 {% endcut %}
 
 {% cut "Lock Object Improvements" %}
+
 Улучшения в `lock`, включая поддержку любых объектов с `Monitor`.
 ```cs
 var obj = new object();
@@ -287,6 +316,7 @@ lock (obj) { /* критическая секция */ }
 {% endcut %}
 
 {% cut "Scoped Ref Structs" %}
+
 Улучшения в анализе escape-проблем для ref structs (`Span<T>`).
 ```cs
 Span<int> Process(Span<int> data)
@@ -297,6 +327,7 @@ Span<int> Process(Span<int> data)
 {% endcut %}
 
 {% cut "Field Keyword in Lambda Expressions" %}
+
 Доступ к полям через лямбда-выражения.
 ```cs
 record Person(string Name);
@@ -305,6 +336,7 @@ var getName = (Person p) => p.field.Name;
 {% endcut %}
 
 {% cut "Semi-auto Properties" %}
+
 Свойства с автоматическим backing field, но с возможностью кастомной логики.
 ```cs
 public class Person
