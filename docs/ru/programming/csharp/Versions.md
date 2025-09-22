@@ -1,5 +1,6 @@
 ## C# 9 (.NET 5, ноябрь 2020)
 {% cut "Records" %}
+
 Это новый тип данных для неизменяемых (immutable) объектов с упрощённым синтаксисом. Они автоматически реализуют `equality`, `hash code` и `ToString()`. Подходят для DTO и данных телеметрии.
 ```cs
 public record Person(string FirstName, string LastName);
