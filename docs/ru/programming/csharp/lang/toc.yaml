@@ -22,3 +22,7 @@ items:
     href: SyncPrimitivs.md
   - name: Volatile
     href: Volatile.md
+  - name: Task.Yield()
+    href: TaskYield.md
+  - name: Примитивные типы
+    href: Primitives.md

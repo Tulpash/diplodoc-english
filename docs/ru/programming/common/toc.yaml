@@ -26,3 +26,5 @@ items:
     href: k8s.md
   - name: ABA
     href: ABA.md
+  - name: CAP-Теорема
+    href: CAP.md
