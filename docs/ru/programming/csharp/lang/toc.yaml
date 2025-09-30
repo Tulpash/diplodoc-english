@@ -14,6 +14,8 @@ items:
     href: Finalizers.md
   - name: Базовые структуры данных
     href: Structs.md
+  - name: Базовые конкурентные структуры
+    href: ConcurrentStructs.md
   - name: Lock-free операции
     href: LockFree.md
   - name: Основные проблемы многопоточности
@@ -26,3 +28,5 @@ items:
     href: TaskYield.md
   - name: Примитивные типы
     href: Primitives.md
+  - name: Пул потоков
+    href: ThreadPool.md

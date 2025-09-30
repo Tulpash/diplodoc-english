@@ -26,3 +26,7 @@ items:
     include:
       path: go/toc.yaml
       mode: link
+  - name: Git
+    include:
+      path: git/toc.yaml
+      mode: link
