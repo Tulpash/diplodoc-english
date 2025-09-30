@@ -1,0 +1,8 @@
+title: Patterns
+items: 
+  - name: Поведенчиские
+    href: Behavioral.md
+  - name: Пораждающие
+    href: Fabrical.md
+  - name: Структурные
+    href: Structural.md

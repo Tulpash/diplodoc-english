@@ -30,3 +30,7 @@ items:
     href: CAP.md
   - name: DDD
     href: DDD.md
+  - name: Паттерны
+    include:
+      path: patterns/toc.yaml
+      mode: link
